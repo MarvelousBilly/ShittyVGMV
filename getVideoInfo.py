@@ -7,7 +7,7 @@ import psutil
 import requests, subprocess
 import time
 
-youtube = build('youtube', 'v3', developerKey='AIzaSyDs0eDvDoKoJwoWoBZ4L2XJFU2e4xbVG7E')
+youtube = build('youtube', 'v3', developerKey='INSERT_DEV_KEY_HERE')
 
 def fetch_playlist_items(playlist_name, page_token=None):
     return youtube.playlistItems().list(
